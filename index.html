@@ -1,0 +1,447 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>GREENMIND</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <!-- icon font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- GREENMIND -->
+    <!-- POPPINS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body class="relative">
+    <!-- navbar -->
+    <div class="px-4 py-8 md:px-24">
+        <div class="flex items-center justify-between">
+            <h2 class="text-3xl font-semibold">
+                GREENMIND
+            </h2>
+
+            <!-- navbar -->
+            <nav id="navbar"
+                class="absolute hidden md:block md:relative top-20 md:top-0 w-full left-0 bg-white font-poopins px-20 py-8 md:py-0">
+                <div class="flex flex-col md:flex-row gap-8 md:gap-12">
+                    <button class="text-slate-400 text-xl font-medium hover:font-semibold hover:text-black ">
+                        Home</button>
+                    <button class="text-slate-400 text-xl font-medium hover:font-semibold hover:text-black ">
+                        Products</button>
+                    <button class="text-slate-400 text-xl font-medium hover:font-semibold hover:text-black ">
+                        Contacts</button>
+                </div>
+            </nav>
+
+            <div class="flex gap-8 md:gap-12">
+                <button class="text-slate-900 font-medium hover:font-semibold ">
+                    <i class="text-xl fa-solid fa-cart-shopping"></i></button>
+                <button class="text-slate-900 font-medium hover:font-semibold ">
+                    <i class="text-xl fa-solid fa-user"></i></button>
+
+                <!-- trigger sidebar -->
+                <button class="md:hidden text-slate-900 font-medium hover:font-semibold" onclick="handleNav()">
+                    <i class="icon-humberger text-xl fa-solid fa-bars"></i>
+                    <i class="icon-close text-xl fa-solid fa-close" style="display: none;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero -->
+    <section class="px-4 md:px-24" id="hero">
+        <div class="w-full flex flex-col md:flex-row bg-custom-green rounded-3xl font-poopins">
+
+            <!-- hero left -->
+            <div class="hero-left md:w-1/2 pt-10 md:pt-12 pb-32 px-8 md:px-12">
+                <!-- slogan -->
+                <h2 class="text-4xl md:text-7xl font-extrabold">Buy your <br> dream plants</h2>
+
+                <!-- plant -->
+                <div class="plant-group flex gap-10 md:gap-16 mt-4 md:mt-8 mb-6  md:mb-12">
+                    <div class="plant-item">
+                        <h3 class="font-medium text-2xl md:text-4xl">50+</h3>
+                        <span class="font-medium text-md md:text-xl">Plant Species</span>
+                    </div>
+                    <div class="border-r border-slate-800"></div>
+                    <div class="plant-item">
+                        <h3 class="font-medium text-2xl md:text-4xl">100+</h3>
+                        <span class="font-medium text-md md:text-xl">Customers</span>
+                    </div>
+                </div>
+
+                <!-- search -->
+                <div class="bg-white md:w-[499px] px-2 py-2 rounded-xl flex justify-between">
+                    <input class="p-2 w-full font-medium text-sm md:text-xl" type="text"
+                        placeholder="What are you looking for?">
+                    <button type="button"
+                        class="text-slate-500 bg-custom-green px-2 md:px-4 py-1 md:py-3 rounded-lg md:rounded-xl">
+                        <i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <!-- hero right -->
+            <div class="hero-right relative md:w-1/2 flex justify-end md:justify-center items-end">
+                <div class="relative background-plant-hero bg-slate-950 w-80 h-72">
+                    <img class="absolute bottom-0 -right-4" src="./assets/img/greenmind/hand-plant.png" alt="">
+                </div>
+                <img class="arrow-1 absolute left-4 md:-left-20 bottom-72 md:bottom-24"
+                    src="./assets/img/greenmind/icon/arrow.png" alt="">
+                <img class="absolute top-8 right-12 hidden md:block" src="./assets/img/greenmind/icon/arrow-2.png"
+                    alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- best selling -->
+    <section class="px-4 md:px-24 mt-12 md:mt-24 font-poopins" id="best_selling">
+        <div class="grid grid-cols-1 md:grid-cols-4">
+            <div class="flex flex-col mb-4">
+                <h3 class="text-2xl md:text-3xl font-semibold">Best Selling <br class="hidden md:block"> Plants</h3>
+                <span class="text-slate-400 text-sm md:text-md font-medium pt-3 pb-4 md:pb-6">Easiest way to <br
+                        class="hidden md:block">
+                    healthy
+                    life by buying
+                    <br class="hidden md:block">
+                    your
+                    favorite
+                    plants</span>
+                <button
+                    class="bg-custom-green w-fit md:w-[168px] py-3 px-6 rounded-lg font-medium text-sm md:text-xl">See
+                    More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="mb-8 col-span-3 flex justify-between gap-2 md:gap-8 md:gap-0">
+                <div class="w-full md:px-2">
+                    <img src="./assets/img/greenmind/plant/plant-1.png" alt="" class="w-full h-auto">
+                    <h4 class="text-md md:text-lg mt-3 font-semibold">Natural Plant</h4>
+                    <h4 class="text-md md:text-lg font-medium text-slate-400 mt-1">Rp 100.000</h4>
+                </div>
+                <div class="w-full md:px-2">
+                    <img src="./assets/img/greenmind/plant/plant-1.png" alt="" class="w-full h-auto">
+                    <h4 class="text-md md:text-lg mt-3 font-semibold">Natural Plant</h4>
+                    <h4 class="text-md md:text-lg font-medium text-slate-400 mt-1">Rp 100.000</h4>
+                </div>
+                <div class="w-full md:px-2">
+                    <img src="./assets/img/greenmind/plant/plant-1.png" alt="" class="w-full h-auto">
+                    <h4 class="text-md md:text-lg mt-3 font-semibold">Natural Plant</h4>
+                    <h4 class="text-md md:text-lg font-medium text-slate-400 mt-1">Rp 100.000</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- about us -->
+    <section class="px-4 md:px-24 mt-12 md:mt-24 font-poopins flex flex-col items-center" id="about_us">
+        <h4 class="text-2xl md:text-3xl font-semibold md:mb-3">About Us</h4>
+        <span class="text-slate-400 font-medium text-sm md:text-lg text-center">Order now and appreciate the beauty
+            of
+            nature</span>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 w-full mt-12">
+            <div class="flex flex-row text-start md:text-center md:flex-col items-center">
+                <img class="w-[96px]" src="./assets/img/greenmind/icon/Large Assortment.png" alt="">
+                <div class="pl-4">
+                    <h6 class="text-lg font-semibold md:mt-6 mb-3">Large Assortment</h6>
+                    <span class="text-center text-slate-400 ">we offer many different types of products with fewer
+                        variations in each
+                        category.</span>
+                </div>
+            </div>
+
+            <div class="flex flex-row text-start md:text-center md:flex-col items-center">
+                <img class="w-[96px]" src="./assets/img/greenmind/icon/Fast & Free Shipping.png" alt="">
+                <div class="pl-4">
+                    <h6 class="text-lg font-semibold md:mt-6 mb-3">Fast & Free Shipping</h6>
+                    <span class="text-center text-slate-400 ">4-day or less delivery time, free shipping and an
+                        expedited
+                        delivery
+                        option.</span>
+                </div>
+            </div>
+            <div class="flex flex-row text-start md:text-center md:flex-col items-center">
+                <img class="w-[96px]" src="./assets/img/greenmind/icon/247 Support.png" alt="">
+                <div class="pl-4">
+                    <h6 class="text-lg font-semibold md:mt-6 mb-3">24/7 Support</h6>
+                    <span class="text-center text-slate-400 ">answers to any business related inquiry 24/7 and in
+                        real-time.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- categories -->
+    <section class="px-4 md:px-24 mt-12 md:mt-24 font-poopins flex flex-col items-center" id="categories">
+        <h4 class="text-2xl md:text-3xl font-semibold md:mb-3">Categories</h4>
+        <span class="text-slate-400 font-medium text-sm md:text-lg">Find what you are looking for</span>
+    </section>
+    <section class="bg-custom-green md:mt-24 md:h-[841px]">
+        <div
+            class="relative grid grid-cols-1 md:grid-cols-3 mt-12 justify-center md:mx-24 gap-8 py-8 md:py-0 md:gap-24">
+            <div class="flex md:block justify-center">
+                <div class="md:absolute -top-12 text-center">
+                    <img class="" src="./assets/img/greenmind/categories/categories.png" alt="">
+                    <h4 class="text-lg font-bold mt-3">Natural Plants</h4>
+                    <span class="text-slate-400 text-lg font-medium mt-3">lorem dolor ipsum</span>
+                </div>
+            </div>
+            <div class="flex md:block justify-center">
+                <div class="md:absolute top-12 text-center">
+                    <img class="" src="./assets/img/greenmind/categories/categories.png" alt="">
+                    <h4 class="text-lg font-bold mt-3">Natural Plants</h4>
+                    <span class="text-slate-400 text-lg font-medium mt-3">lorem dolor ipsum</span>
+                    <div class="hidden md:block">
+                        <button class="bg-white w-[168px] py-3 px-6 rounded-lg font-medium text-xl mt-6">Explore <i
+                                class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:block justify-center">
+                <div class="md:absolute -top-12 text-center">
+                    <img class="" src="./assets/img/greenmind/categories/categories.png" alt="">
+                    <h4 class="text-lg font-bold mt-3">Natural Plants</h4>
+                    <span class="text-slate-400 text-lg font-medium mt-3">lorem dolor ipsum</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- customer say -->
+    <section class="px-4 md:px-24 font-poopins mt-12 md:mt-24" id="customer_say">
+        <div class="flex justify-between items-center">
+            <div>
+                <h4 class="text-2xl md:text-3xl font-semibold md:mb-3">What customers say about <br> GREEMIND?</h4>
+            </div>
+            <!-- <div class="flex gap-2">
+                <div class="w-12 h-2 rounded-lg bg-custom-green"></div>
+                <div class="w-3 h-2 rounded-lg bg-slate-300"></div>
+                <div class="w-3 h-2 rounded-lg bg-slate-300"></div>
+            </div> -->
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide px-2">
+                    <div class="w-full relative bg-custom-green rounded-xl mb-24 mt-12">
+                        <div>
+                            <h4 class="text-slate-600 text-sm md:text-lg px-6 md:px-12 pb-4 pt-6">
+                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                                interdum, ac
+                                aliquet odio
+                                mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos.
+                            </h4>
+                        </div>
+                        <div class="flex justify-center gap-8 items-center px-8 md:mt-4">
+                            <div class="flex relative">
+                                <img class="h-20 md:h-32 bottom-0 left-6 z-10"
+                                    src="./assets/img/greenmind/person/person-1.png" alt="">
+                                <!-- <img class="absolute w-6 z-0" src="./assets/img/greenmind/icon/quote.png" alt=""> -->
+                            </div>
+
+                            <div class="flex text-slate-900 text-lg items-start">
+                                <div>
+                                    <h4 class="font-black text-md md:text-xl">John Doe</h4>
+                                    <span class="font-medium text-sm">CEO of Company</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold">
+                                    <i class="fa-solid fa-star"></i>
+                                    4.5
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide px-2">
+                    <div class="w-full relative bg-custom-green rounded-xl mb-24 mt-12">
+                        <div>
+                            <h4 class="text-slate-600 text-sm md:text-lg px-6 md:px-12 pb-4 pt-6">
+                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                                interdum, ac
+                                aliquet odio
+                                mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos.
+                            </h4>
+                        </div>
+                        <div class="flex justify-center gap-8 items-center px-8 md:mt-4">
+                            <div class="flex relative">
+                                <img class="h-20 md:h-32 bottom-0 left-6 z-10"
+                                    src="./assets/img/greenmind/person/person-1.png" alt="">
+                                <!-- <img class="absolute w-6 z-0" src="./assets/img/greenmind/icon/quote.png" alt=""> -->
+                            </div>
+
+                            <div class="flex text-slate-900 text-lg items-start">
+                                <div>
+                                    <h4 class="font-black text-md md:text-xl">John Doe</h4>
+                                    <span class="font-medium text-sm">CEO of Company</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold">
+                                    <i class="fa-solid fa-star"></i>
+                                    4.5
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide px-2">
+                    <div class="w-full relative bg-custom-green rounded-xl mb-24 mt-12">
+                        <div>
+                            <h4 class="text-slate-600 text-sm md:text-lg px-6 md:px-12 pb-4 pt-6">
+                                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                                interdum, ac
+                                aliquet odio
+                                mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos.
+                            </h4>
+                        </div>
+                        <div class="flex justify-center gap-8 items-center px-8 md:mt-4">
+                            <div class="flex relative">
+                                <img class="h-20 md:h-32 bottom-0 left-6 z-10"
+                                    src="./assets/img/greenmind/person/person-1.png" alt="">
+                                <!-- <img class="absolute w-6 z-0" src="./assets/img/greenmind/icon/quote.png" alt=""> -->
+                            </div>
+
+                            <div class="flex text-slate-900 text-lg items-start">
+                                <div>
+                                    <h4 class="font-black text-md md:text-xl">John Doe</h4>
+                                    <span class="font-medium text-sm">CEO of Company</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold">
+                                    <i class="fa-solid fa-star"></i>
+                                    4.5
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row md:gap-8">
+
+
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="mt-24 px-8 md:px-24 pb-12 bg-custom-green">
+        <div class="grid grid-cols-1 md:grid-cols-3 pt-12 pb-24">
+            <div class="col-span-2 flex flex-col gap-6">
+                <h2 class="text-3xl font-bold">GREENMIND</h2>
+                <span class="text-slate-500 text-xl ">We help you <br> find your dream plant</span>
+                <div class="flex">
+                    <div class="flex gap-4">
+                        <button
+                            class=" flex items-center text-slate-900 border-slate-800 border rounded-full px-3 py-3 font-medium hover:bg-slate-800 hover:text-custom-green ">
+                            <i class="text-xl fa-brands fa-instagram"></i></button>
+                        <button
+                            class=" flex items-center text-slate-900 border-slate-800 border rounded-full px-3 py-3 font-medium hover:bg-slate-800 hover:text-custom-green ">
+                            <i class="text-xl fa-brands fa-facebook"></i></button>
+                        <button
+                            class=" flex items-center text-slate-900 border-slate-800 border rounded-full px-3 py-3 font-medium hover:bg-slate-800 hover:text-custom-green ">
+                            <i class="text-xl fa-brands fa-twitter"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="flex gap-12">
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-xl font-semibold">Information</h3>
+                        <a class="text-slate-500" href="#">About</a>
+                        <a class="text-slate-500" href="#">Product</a>
+                        <a class="text-slate-500" href="#">Blogs</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-xl font-semibold">Company</h3>
+                        <a class="text-slate-500" href="#">Community</a>
+                        <a class="text-slate-500" href="#">carrer</a>
+                        <a class="text-slate-500" href="#">Our Story</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-xl font-semibold">Contact</h3>
+                        <a class="text-slate-500" href="#">Getting Started</a>
+                        <a class="text-slate-500" href="#">Pricing</a>
+                        <a class="text-slate-500" href="#">Resource</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <span class="text-slate-500 text-lg ">© 2023 all Right Reserved Term of use GREENMIND</span>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            // breakpoints
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+            },
+        });
+    </script>
+
+    <!-- js -->
+    <script>
+        function handleNav() {
+            var nav = document.getElementById('navbar');
+            var iconHumberger = document.querySelector('.icon-humberger');
+            var iconClose = document.querySelector('.icon-close');
+
+            if (nav.style.display === 'none') {
+                nav.style.display = 'block';
+                iconHumberger.style.display = 'none';
+                iconClose.style.display = 'block';
+            } else {
+                nav.style.display = 'none';
+                iconHumberger.style.display = 'block';
+                iconClose.style.display = 'none';
+            }
+        }
+    </script>
+
+
+
+</body>
+
+
+</html>
