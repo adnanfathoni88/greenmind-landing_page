@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+
+<body>
+    <div class="font-sans">
+        <!-- navbar -->
+        <div class="px-4 md:px-16">
+            <nav class="py-4">
+                <div class="flex justify-between items-center">
+                    <div class="">
+                        <img class="block h-8 md:h-12" src="./assets/img/logo/logo.png" alt="">
+                    </div>
+                    <div id="navbar"
+                        class="absolute lg:relative w-full lg:w-fit z-10 mt-12 md:mt-16 lg:mt-0 left-0 top-0 flex flex-col lg:flex-row lg:justify-between bg-white py-4 px-4 gap-2 lg:gap-6 font-semibold hidden lg:block">
+                        <button
+                            class="hover:bg-slate-100 px-3 py-2 hover:rounded-md text-slate-900 font-medium hover:font-semibold ">
+                            CATALOGUE</button>
+                        <button
+                            class="hover:bg-slate-100 px-3 py-2 hover:rounded-md text-slate-900 font-medium hover:font-semibold ">FASHION</button>
+                        <button
+                            class="hover:bg-slate-100 px-3 py-2 hover:rounded-md text-slate-900 font-medium hover:font-semibold ">FAVORITE</button>
+                        <button
+                            class="hover:bg-slate-100 px-3 py-2 hover:rounded-md text-slate-900 font-medium hover:font-semibold ">LIFESTYLE</button>
+                        <button class="bg-slate-950 text-white hover:bg-slate-800 px-3 py-2 rounded-md">SIGN UP</button>
+                    </div>
+                    <div class="lg:absolute">
+                        <button onclick=" handleNav()"
+                            class="lg:hidden bg-slate-950 text-white hover:bg-slate-800 px-2 py-1 rounded-md">☰</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="p-4 lg:px-16">
+            <div class="bg-custom-grey w-full h-fit rounded-lg lg:rounded-[59px]">
+                <div class="container mx-auto flex flex-col md:flex-row">
+                    <div class="md:p-4 lg:p-12 lg:w-1/3 md:1/2">
+                        <div class=" relative">
+                            <!-- putih -->
+                            <img class="absolute h-16 top-2 md:-top-2 left-4 lg:h-28 lg:w-[350px]"
+                                src="./assets/img/component/rectangle-1.png">
+                            <!-- kuning -->
+                            <img class="absolute mt-2 h-14 top-32 left-4 lg:top-44 lg:h-24 md:w-[380px]"
+                                src="./assets/img/component/rectangle-2.png">
+                            <h4 class="relative font-black text-4xl pt-6 lg:pt-0 lg:leading-normal px-8 lg:text-6xl">
+                                LET’S <br>
+                                EXPLORE <br>
+                                UNIQUE <br>
+                                CLOTHES.
+                            </h4>
+                        </div>
+                        <div class="my-4 px-8">
+                            <span class="text-xl lg:text-xl">Live for Influential and Innovative fashion!</span>
+                        </div>
+                        <div class="px-8 pb-8">
+                            <button class="bg-slate-950 text-white hover:bg-slate-800 px-6 py-3 rounded-md text-xl">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="md:1/2 lg:w-2/3 flex justify-center items-end">
+                        <div class="w-[80%]">
+                            <img class="" src="./assets/img/person/person-1.png">
+                        </div>
+                        <!-- <div class="relative">
+                            <img class="absolute bottom-0 left-2 max-h-full h-[90%]"
+                                src="./assets/img/person/person-1.png">
+                            <img class="absolute w-10 top-10" src="./assets/img/icon/star.png" alt="">
+                            <img class="absolute w-10 top-16 right-32" src="./assets/img/icon/star.png" alt="">
+                            <img class="absolute w-10 bottom-10 left-5" src="./assets/img/icon/star.png" alt="">
+                            <img class="absolute w-10 right-20 bottom-10" src="./assets/img/icon/star.png" alt="">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sponsor -->
+        <div class="bg-custom-yellow w-full mt-8 p-6 overflow-hidden">
+            <!-- auto scroll -->
+            <div class="sponsor-group">
+                <div class="sponsor-item flex justify-center align-center px-4 md:px-12 py-2">
+                    <img class="h-12 md:h-20 mix-blend-multiply max-w-none" src="assets/img/logo/h&m.png" alt="">
+                </div>
+                <div class="sponsor-item flex justify-center align-center px-4 md:px-12 py-2">
+                    <img class="h-12 md:h-20 mix-blend-multiply max-w-none" src="assets/img/logo/obey.png" alt="">
+                </div>
+                <div class="sponsor-item flex justify-center align-center px-4 md:px-12 py-2">
+                    <img class="h-12 md:h-20 mix-blend-multiply max-w-none" src="assets/img/logo/shopify.png" alt="">
+                </div>
+                <div class="sponsor-item flex justify-center align-center px-4 md:px-12 py-2">
+                    <img class="h-12 md:h-20 mix-blend-multiply max-w-none" src="assets/img/logo/lacoste.png" alt="">
+                </div>
+                <div class="sponsor-item flex justify-center align-center px-4 md:px-12 py-2">
+                    <img class="h-12 md:h-20 mix-blend-multiply max-w-none" src="assets/img/logo/levis.png"
+                        style="mix-blend-mode: multiply;" alt="">
+                </div>
+                <div class="sponsor-item flex justify-center align-center px-4 md:px-12 py-2">
+                    <img class="h-12 md:h-20 mix-blend-multiply max-w-none" src="assets/img/logo/amazon.png" alt="">
+                </div>
+                <div class="sponsor-item flex justify-center align-center px-4 md:px-12 py-2">
+                    <img class="h-12 md:h-20 mix-blend-multiply max-w-none" src="assets/img/logo/h&m.png" alt="">
+                </div>
+                <div class="sponsor-item flex justify-center align-center px-4 md:px-12 py-2">
+                    <img class="h-12 md:h-20 mix-blend-multiply max-w-none" src="assets/img/logo/obey.png" alt="">
+                </div>
+                <div class="sponsor-item flex justify-center align-center px-4 md:px-12 py-2">
+                    <img class="h-12 md:h-20 mix-blend-multiply max-w-none" src="assets/img/logo/shopify.png" alt="">
+                </div>
+                <div class="sponsor-item flex justify-center align-center px-4 md:px-12 py-2">
+                    <img class="h-12 md:h-20 mix-blend-multiply max-w-none" src="assets/img/logo/lacoste.png" alt="">
+                </div>
+                <div class="sponsor-item flex justify-center align-center px-4 md:px-12 py-2">
+                    <img class="h-12 md:h-20 mix-blend-multiply max-w-none" src="assets/img/logo/levis.png"
+                        style="mix-blend-mode: multiply;" alt="">
+                </div>
+                <div class="sponsor-item flex justify-center align-center px-4 md:px-12 py-2">
+                    <img class="h-12 md:h-20 mix-blend-multiply max-w-none" src="assets/img/logo/amazon.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- new arrivals -->
+        <div class="px-4 lg:px-20 py-8 lg:mt-16">
+            <div class="relative w-fit">
+                <h2 class="font-black text-2xl md:text-3xl">NEW ARRIVALS</h2>
+                <img class="absolute -z-10 -bottom-1 right-0 w-28" src="./assets/img/component/brush-1.png" alt="">
+            </div>
+            <div class="py-4 lg:pt-20">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-16">
+                    <div>
+                        <img class="h-80 lg:h-[600px] w-full object-none rounded-lg object-top"
+                            src="./assets/img/product/hoodie.png" alt="">
+                        <div class="pt-6 flex justify-between items-center">
+                            <div>
+                                <h5 class="font-semibold text-2xl">Hoodies & Sweetshirt</h5>
+                                <span class="text-slate-500">Explore Now!</span>
+                            </div>
+                            <div>
+                                <img src="./assets/img/icon/arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="h-80 lg:h-[600px] w-full object-none rounded-lg object-top"
+                            src="./assets/img/product/coats.png" alt="">
+                        <div class="pt-6 flex justify-between items-center">
+                            <div>
+                                <h5 class="font-semibold text-2xl">Coats & Parkas</h5>
+                                <span class="text-slate-500">Explore Now!</span>
+                            </div>
+                            <div>
+                                <img src="./assets/img/icon/arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="h-80 lg:h-[600px] w-full object-none rounded-lg object-top"
+                            src="./assets/img/product/t-shirt.png" alt="">
+                        <div class="pt-6 flex justify-between items-center">
+                            <div>
+                                <h5 class="font-semibold text-2xl">Tees & T-Shirt</h5>
+                                <span class="text-slate-500">Explore Now!</span>
+                            </div>
+                            <div>
+                                <img src="./assets/img/icon/arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- payday -->
+        <div class="bg-gradient-to-b from-yellow-300/75 to-yellow-300">
+            <div class="grid grid-cols-1 md:grid-cols-2 ">
+                <div class="hidden md:block relative lg:flex justify-center ">
+                    <img class="absolute w-10 top-10 right-20 mix-blend-screen rotate-45"
+                        src="./assets/img/icon/star.png" alt="">
+                    <img class="absolute w-10 bottom-20 right-32 mix-blend-screen" src="./assets/img/icon/star.png"
+                        alt="">
+                    <img class="absolute w-10 top-10 left-32 mix-blend-screen rotate-12"
+                        src="./assets/img/icon/star.png" alt="">
+                    <img class="absolute w-10 bottom-20 left-44 mix-blend-screen rotate-3"
+                        src="./assets/img/icon/star.png" alt="">
+                    <img class="h-full" src="./assets//img/person/person-2.png" alt="">
+                </div>
+                <div class="p-8 flex flex-col justify-center align-center">
+                    <div>
+                        <img class=" absolute h-16 lg:h-28 lg:w-[350px]" src="./assets/img/component/rectangle-1.png">
+                        <H4 class="relative font-black text-3xl lg:text-6xl leading-normal lg:leading-normal py-3 px-8">
+                            PAYDAY <br>
+                            NOW</H4>
+                        <p class="px-4 lg:px-8 opacity-50">
+                            Spend minimal $100 get 30% off <br>
+                            voucher code for your next purchase
+                        </p>
+                        <p class=" px-4 lg:px-8 pt-4 opacity-75">
+                            <b>1 June - 10 June 2021</b> <br>
+                            *Terms & Conditions apply
+                        </p>
+                        <div class="px-4 lg:px-8 pt-6">
+                            <button class="bg-slate-950 text-white hover:bg-slate-800 px-6 py-3 rounded-md text-xl">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- youngs favorite -->
+        <div class="mx-auto container px-4 lg:px-20 lg:mt-16">
+            <div class="relative w-fit py-4 lg:py-0">
+                <h2 class="font-black text-2xl lg:text-3xl">YOUNG'S FAVORITE</h2>
+                <img class="absolute -z-10 bottom-2 lg:-bottom-1 right-0 w-28" src="./assets/img/component/brush-1.png"
+                    alt="">
+            </div>
+            <div class="grid grid-cols-2 gap-[8px] lg:gap-12 lg:pt-12">
+                <div>
+                    <img src="./assets/img/person/tren-on-ig.png" alt="">
+
+                    <div class="pt-2 lg:pt-6 flex flex-col lg:flex-row justify-between items-start lg:items-center">
+                        <div>
+                            <h5 class=" font-semibold text-md lg:text-2xl">Trending on instagram</h5>
+                            <span class="text-slate-500">Explore Now!</span>
+                        </div>
+                        <div class="mt-2">
+                            <img class="w-6 lg:w-8" src="./assets/img/icon/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/img/person/all-under.png" alt="">
+
+                    <div class="pt-2 lg:pt-6 flex flex-col lg:flex-row justify-between items-start lg:items-center">
+                        <div>
+                            <h5 class=" font-semibold text-md lg:text-2xl">Trending on instagram</h5>
+                            <span class="text-slate-500">Explore Now!</span>
+                        </div>
+                        <div class="mt-2">
+                            <img class="w-6 lg:w-8" src="./assets/img/icon/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- donwload app -->
+        <div class="container mx-auto px-4 lg:px-20 mt-8 lg:mt-16 lg:mb-40">
+            <div class="flex flex-col-reverse md:flex-row">
+                <div class="md:w-1/2 flex flex-col justify-center lg:pl-20">
+                    <h4 class="font-black text-2xl lg:text-3xl tracking-wide leading-normal">
+                        DOWNLOAD APP & <br>
+                        GET THE VOUCHER!
+                    </h4>
+                    <p class="pt-4 text-slate-500">Get 30% off for first transaction using <br>
+                        Rondovision mobile app for now.</p>
+                    <div class="flex gap-4 pt-8">
+                        <button>
+                            <img class="w-28 hover:scale-105" src="./assets/img/component/button-app-store.png" alt="">
+                        </button>
+                        <button>
+                            <img class="w-28 hover:scale-105" src="./assets/img/component/button-play-store.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 py-8">
+                    <div class="flex justify-center relative">
+                        <img class="absolute" src="./assets/img/component/spiral.png" alt="">
+                        <img class="relative w-60 lg:w-80" src="./assets/img/component/app-mobile.png" alt="">
+                        <div class="absolute z-10 bottom-0 left-20 bg-custom-yellow rounded-full h-8 w-8"> </div>
+                        <div class="absolute z-10 top-16 left-20 bg-slate-500 rounded-full h-4 w-4"> </div>
+                        <div class="absolute z-10 bottom-16 right-20 bg-slate-500 rounded-full h-4 w-4"> </div>
+                        <div class="absolute z-10 top-0 right-20 bg-custom-yellow rounded-full h-8 w-8"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- join -->
+        <div class="mt-16">
+            <div class="bg-custom-dark-yellow flex flex-col items-center text-center py-20">
+                <h4 class="font-extrabold text-white text-2xl lg:text-3xl tracking-wide leading-normal">JOIN SHOPPING
+                    COMMUNITY
+                    TO
+                    <br> GET MONTHLY PROMO
+                </h4>
+                <p class="text-white/75 py-4 ">Type your email down below and be young wild generation</p>
+                <div class="bg-white py-1 px-2 rounded-md">
+                    <input type="text" class="bg-white px-4 py-2 rounded-sm outline-none"
+                        placeholder="Add your email here">
+                    <button
+                        class="bg-slate-950 text-white hover:bg-slate-800 px-6 py-2 rounded-md text-sm">SEND</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="bg-slate-950 w-full">
+            <div class="grid lg:grid-cols-3 grid-cols-1 px-20 py-32">
+                <div class="text-white">
+                    <h4 class="font-black text-2xl">FASHION.</h4>
+                    <p class="text-white/75 font-light text-sm leading-normal py-2 opacity-75">
+                        Complete your style with awesome <br> clothes from us.
+                    </p>
+                    <div class="flex gap-2">
+                        <img class="w-10" src="./assets/img/icon/facebook.png" alt="">
+                        <img class="w-10" src="./assets/img/icon/linkedn.png" alt="">
+                        <img class="w-10" src="./assets/img/icon/twitter.png" alt="">
+                        <img class="w-10" src="./assets/img/icon/ig.png" alt="">
+                    </div>
+                </div>
+                <div class="col-span-2 text-white hidden lg:block">
+                    <div class="flex justify-end gap-32 px-10">
+                        <div class="flex flex-col gap-2">
+                            <h4>Company</h4>
+                            <p class="opacity-50">About</p>
+                            <p class="opacity-50">Contact Us</p>
+                            <p class="opacity-50">Support</p>
+                            <p class="opacity-50">Careers</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h4>Quick Link</h4>
+                            <p class="opacity-50">Share Location</p>
+                            <p class="opacity-50">Orders Tracking</p>
+                            <p class="opacity-50">Size Guide</p>
+                            <p class="opacity-50">FAQs</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h4>Legal</h4>
+                            <p class="opacity-50">Terms & conditions</p>
+                            <p class="opacity-50">Privacy Policy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- js -->
+        <script>
+            function handleNav() {
+                var nav = document.getElementById('navbar');
+
+                if (nav.style.display === 'none') {
+                    nav.style.display = 'flex';
+                } else {
+                    nav.style.display = 'none';
+                }
+            }
+        </script>
+
+</body>
+
+
+</html>
