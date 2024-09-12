@@ -6,6 +6,7 @@
     <title>GREENMIND</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../src/css/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./public/assets/img/greenmind/plant/plant-1.png">
     <link rel="stylesheet" href="../src/css/style.css">
     <!-- icon font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,6 +18,9 @@
 
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 
 </head>
@@ -62,7 +66,8 @@
         <div class="w-full flex flex-col md:flex-row bg-custom-green rounded-3xl font-poopins">
 
             <!-- hero left -->
-            <div class="hero-left md:w-1/2 pt-10 md:pt-12 pb-32 px-8 md:px-12">
+            <div data-aos="fade-up" data-aos-duration="1000"
+                class="hero-left md:w-1/2 pt-10 md:pt-12 pb-32 px-8 md:px-12">
                 <!-- slogan -->
                 <h2 class="text-4xl md:text-7xl font-extrabold">Buy your <br> dream plants</h2>
 
@@ -91,13 +96,14 @@
 
             <!-- hero right -->
             <div class="hero-right relative md:w-1/2 flex justify-end md:justify-center items-end">
-                <div class="relative background-plant-hero bg-slate-950 w-80 h-72">
-                    <img class="absolute bottom-0 -right-4" src="./assets/img/greenmind/hand-plant.png" alt="">
+                <div data-aos="fade-up" data-aos-duration="1000" class="relative background-plant-hero
+                    bg-slate-950 w-80 h-72">
+                    <img class="absolute bottom-0 -right-4" src="./public/assets/img/greenmind/hand-plant.png" alt="">
                 </div>
-                <img class="arrow-1 absolute left-4 md:-left-20 bottom-72 md:bottom-24"
-                    src="./assets/img/greenmind/icon/arrow.png" alt="">
-                <img class="absolute top-8 right-12 hidden md:block" src="./assets/img/greenmind/icon/arrow-2.png"
-                    alt="">
+                <img data-aos="fade-right" class="arrow-1 absolute left-4 md:-left-20 bottom-72 md:bottom-24"
+                    src="./public/assets/img/greenmind/icon/arrow.png" alt="">
+                <img data-aos="fade-left" data-aos-duration="500" class="absolute top-8 right-12 hidden md:block"
+                    src="./public/assets/img/greenmind/icon/arrow-2.png" alt="">
             </div>
 
         </div>
@@ -107,7 +113,7 @@
     <!-- best selling -->
     <section class="px-4 md:px-24 mt-12 md:mt-24 font-poopins" id="best_selling">
         <div class="grid grid-cols-1 md:grid-cols-4">
-            <div class="flex flex-col mb-4">
+            <div data-aos="fade-right" data-aos-duration="700" class="flex flex-col mb-4">
                 <h3 class="text-2xl md:text-3xl font-semibold">Best Selling <br class="hidden md:block"> Plants</h3>
                 <span class="text-slate-400 text-sm md:text-md font-medium pt-3 pb-4 md:pb-6">Easiest way to <br
                         class="hidden md:block">
@@ -125,18 +131,18 @@
             </div>
 
             <div class="mb-8 col-span-3 flex justify-between gap-2 md:gap-8 md:gap-0">
-                <div class="w-full md:px-2">
-                    <img src="./assets/img/greenmind/plant/plant-1.png" alt="" class="w-full h-auto">
+                <div data-aos="fade-up" data-aos-duration="500" class="w-full md:px-2">
+                    <img src="./public/assets/img/greenmind/plant/plant-1.png" alt="" class="w-full h-auto">
                     <h4 class="text-md md:text-lg mt-3 font-semibold">Natural Plant</h4>
                     <h4 class="text-md md:text-lg font-medium text-slate-400 mt-1">Rp 100.000</h4>
                 </div>
-                <div class="w-full md:px-2">
-                    <img src="./assets/img/greenmind/plant/plant-1.png" alt="" class="w-full h-auto">
+                <div data-aos="fade-up" data-aos-duration="1000" class="w-full md:px-2">
+                    <img src="./public/assets/img/greenmind/plant/plant-1.png" alt="" class="w-full h-auto">
                     <h4 class="text-md md:text-lg mt-3 font-semibold">Natural Plant</h4>
                     <h4 class="text-md md:text-lg font-medium text-slate-400 mt-1">Rp 100.000</h4>
                 </div>
-                <div class="w-full md:px-2">
-                    <img src="./assets/img/greenmind/plant/plant-1.png" alt="" class="w-full h-auto">
+                <div data-aos="fade-up" data-aos-duration="1500" class="w-full md:px-2">
+                    <img src="./public/assets/img/greenmind/plant/plant-1.png" alt="" class="w-full h-auto">
                     <h4 class="text-md md:text-lg mt-3 font-semibold">Natural Plant</h4>
                     <h4 class="text-md md:text-lg font-medium text-slate-400 mt-1">Rp 100.000</h4>
                 </div>
@@ -147,13 +153,15 @@
 
     <!-- about us -->
     <section class="px-4 md:px-24 mt-12 md:mt-24 font-poopins flex flex-col items-center" id="about_us">
-        <h4 class="text-2xl md:text-3xl font-semibold md:mb-3">About Us</h4>
-        <span class="text-slate-400 font-medium text-sm md:text-lg text-center">Order now and appreciate the beauty
+        <h4 data-aos="fade-up" data-aos-duration="700" class="text-2xl md:text-3xl font-semibold md:mb-3">About Us</h4>
+        <span data-aos="fade-up" data-aos-duration="1000"
+            class="text-slate-400 font-medium text-sm md:text-lg text-center">Order now and appreciate the beauty
             of
             nature</span>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 w-full mt-12">
-            <div class="flex flex-row text-start md:text-center md:flex-col items-center">
-                <img class="w-[96px]" src="./assets/img/greenmind/icon/Large Assortment.png" alt="">
+            <div data-aos="zoom-in" data-aos-duration="800"
+                class="flex flex-row text-start md:text-center md:flex-col items-center">
+                <img class="w-[96px]" src="./public/assets/img/greenmind/icon/Large Assortment.png" alt="">
                 <div class="pl-4">
                     <h6 class="text-lg font-semibold md:mt-6 mb-3">Large Assortment</h6>
                     <span class="text-center text-slate-400 ">we offer many different types of products with fewer
@@ -162,8 +170,9 @@
                 </div>
             </div>
 
-            <div class="flex flex-row text-start md:text-center md:flex-col items-center">
-                <img class="w-[96px]" src="./assets/img/greenmind/icon/Fast & Free Shipping.png" alt="">
+            <div data-aos="zoom-in" data-aos-duration="800"
+                class="flex flex-row text-start md:text-center md:flex-col items-center">
+                <img class="w-[96px]" src="./public/assets/img/greenmind/icon/Fast & Free Shipping.png" alt="">
                 <div class="pl-4">
                     <h6 class="text-lg font-semibold md:mt-6 mb-3">Fast & Free Shipping</h6>
                     <span class="text-center text-slate-400 ">4-day or less delivery time, free shipping and an
@@ -172,8 +181,9 @@
                         option.</span>
                 </div>
             </div>
-            <div class="flex flex-row text-start md:text-center md:flex-col items-center">
-                <img class="w-[96px]" src="./assets/img/greenmind/icon/247 Support.png" alt="">
+            <div data-aos="zoom-in" data-aos-duration="800"
+                class="flex flex-row text-start md:text-center md:flex-col items-center">
+                <img class="w-[96px]" src="./public/assets/img/greenmind/icon/247 Support.png" alt="">
                 <div class="pl-4">
                     <h6 class="text-lg font-semibold md:mt-6 mb-3">24/7 Support</h6>
                     <span class="text-center text-slate-400 ">answers to any business related inquiry 24/7 and in
@@ -185,22 +195,24 @@
 
     <!-- categories -->
     <section class="px-4 md:px-24 mt-12 md:mt-24 font-poopins flex flex-col items-center" id="categories">
-        <h4 class="text-2xl md:text-3xl font-semibold md:mb-3">Categories</h4>
-        <span class="text-slate-400 font-medium text-sm md:text-lg">Find what you are looking for</span>
+        <h4 data-aos="fade-up" data-aos-duration="500" class="text-2xl md:text-3xl font-semibold md:mb-3">Categories
+        </h4>
+        <span data-aos="fade-up" data-aos-duration="800" class="text-slate-400 font-medium text-sm md:text-lg">Find what
+            you are looking for</span>
     </section>
     <section class="bg-custom-green md:mt-24 md:h-[841px]">
         <div
             class="relative grid grid-cols-1 md:grid-cols-3 mt-12 justify-center md:mx-24 gap-8 py-8 md:py-0 md:gap-24">
-            <div class="flex md:block justify-center">
+            <div data-aos="fade-up" data-aos-duration="1000" class="flex md:block justify-center">
                 <div class="md:absolute -top-12 text-center">
-                    <img class="" src="./assets/img/greenmind/categories/categories.png" alt="">
+                    <img class="" src="./public/assets/img/greenmind/categories/categories.png" alt="">
                     <h4 class="text-lg font-bold mt-3">Natural Plants</h4>
                     <span class="text-slate-400 text-lg font-medium mt-3">lorem dolor ipsum</span>
                 </div>
             </div>
-            <div class="flex md:block justify-center">
+            <div data-aos="fade-up" data-aos-duration="1500" class="flex md:block justify-center">
                 <div class="md:absolute top-12 text-center">
-                    <img class="" src="./assets/img/greenmind/categories/categories.png" alt="">
+                    <img class="" src="./public/assets/img/greenmind/categories/categories.png" alt="">
                     <h4 class="text-lg font-bold mt-3">Natural Plants</h4>
                     <span class="text-slate-400 text-lg font-medium mt-3">lorem dolor ipsum</span>
                     <div class="hidden md:block">
@@ -210,9 +222,9 @@
                     </div>
                 </div>
             </div>
-            <div class="flex md:block justify-center">
+            <div data-aos="fade-up" data-aos-duration="1000" class="flex md:block justify-center">
                 <div class="md:absolute -top-12 text-center">
-                    <img class="" src="./assets/img/greenmind/categories/categories.png" alt="">
+                    <img class="" src="./public/assets/img/greenmind/categories/categories.png" alt="">
                     <h4 class="text-lg font-bold mt-3">Natural Plants</h4>
                     <span class="text-slate-400 text-lg font-medium mt-3">lorem dolor ipsum</span>
                 </div>
@@ -223,7 +235,7 @@
     <!-- customer say -->
     <section class="px-4 md:px-24 font-poopins mt-12 md:mt-24" id="customer_say">
         <div class="flex justify-between items-center">
-            <div>
+            <div data-aos="fade-up" data-aos-duration="500">
                 <h4 class="text-2xl md:text-3xl font-semibold md:mb-3">What customers say about <br> GREEMIND?</h4>
             </div>
             <!-- <div class="flex gap-2">
@@ -250,8 +262,8 @@
                         <div class="flex justify-center gap-8 items-center px-8 md:mt-4">
                             <div class="flex relative">
                                 <img class="h-20 md:h-32 bottom-0 left-6 z-10"
-                                    src="./assets/img/greenmind/person/person-1.png" alt="">
-                                <!-- <img class="absolute w-6 z-0" src="./assets/img/greenmind/icon/quote.png" alt=""> -->
+                                    src="./public/assets/img/greenmind/person/person-1.png" alt="">
+                                <!-- <img class="absolute w-6 z-0" src="./public/assets/img/greenmind/icon/quote.png" alt=""> -->
                             </div>
 
                             <div class="flex text-slate-900 text-lg items-start">
@@ -283,8 +295,8 @@
                         <div class="flex justify-center gap-8 items-center px-8 md:mt-4">
                             <div class="flex relative">
                                 <img class="h-20 md:h-32 bottom-0 left-6 z-10"
-                                    src="./assets/img/greenmind/person/person-1.png" alt="">
-                                <!-- <img class="absolute w-6 z-0" src="./assets/img/greenmind/icon/quote.png" alt=""> -->
+                                    src="./public/assets/img/greenmind/person/person-1.png" alt="">
+                                <!-- <img class="absolute w-6 z-0" src="./public/assets/img/greenmind/icon/quote.png" alt=""> -->
                             </div>
 
                             <div class="flex text-slate-900 text-lg items-start">
@@ -316,8 +328,8 @@
                         <div class="flex justify-center gap-8 items-center px-8 md:mt-4">
                             <div class="flex relative">
                                 <img class="h-20 md:h-32 bottom-0 left-6 z-10"
-                                    src="./assets/img/greenmind/person/person-1.png" alt="">
-                                <!-- <img class="absolute w-6 z-0" src="./assets/img/greenmind/icon/quote.png" alt=""> -->
+                                    src="./public/assets/img/greenmind/person/person-1.png" alt="">
+                                <!-- <img class="absolute w-6 z-0" src="./public/assets/img/greenmind/icon/quote.png" alt=""> -->
                             </div>
 
                             <div class="flex text-slate-900 text-lg items-start">
@@ -397,8 +409,16 @@
             <span class="text-slate-500 text-lg ">© 2023 all Right Reserved Term of use GREENMIND</span>
         </div>
     </footer>
+
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Initialize Swiper -->
     <script>
